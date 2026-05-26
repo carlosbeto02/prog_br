@@ -1,0 +1,12 @@
+img{
+    width: 170px;
+    float: right;
+    /* float: left; */
+
+}
+
+div{
+    height: 170px;
+    border:1px solid black;
+    overflow: auto; /* a div engloba a imagem */
+}

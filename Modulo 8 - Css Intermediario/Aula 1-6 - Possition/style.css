@@ -1,0 +1,81 @@
+* {
+    margin-bottom: 3rem;
+}
+
+section {
+    margin-bottom: 6rem;
+}
+
+.box {
+    width: 20rem;
+    height: 20rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-weight: bold;
+}
+
+/* STATIC */
+.static {
+    position: static;
+    background: steelblue;
+}
+
+/* RELATIVE */
+.relative {
+    position: relative;
+    top: 2rem;
+    left: 3rem;
+
+    background: seagreen;
+}
+
+/* ABSOLUTE */
+.container {
+    position: relative;
+
+    width: 40rem;
+    height: 40rem;
+
+    background: #ddd;
+}
+
+.absolute {
+    position: absolute;
+
+    top: 5rem;
+    left: 5rem;
+
+    background: tomato;
+}
+
+/* FIXED */
+.fixed {
+    position: fixed;
+
+    bottom: 2rem;
+    right: 2rem;
+
+    width: 12rem;
+    height: 12rem;
+
+    background: purple;
+}
+
+/* STICKY */
+.sticky {
+    position: sticky;
+    top: 0;
+
+    padding: 2rem;
+
+    background: black;
+    color: white;
+}
+
+.content {
+    height: 200vh;
+}
