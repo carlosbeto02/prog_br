@@ -55,3 +55,16 @@ A propriedade `overflow` controla o comportamento do conteúdo quando ele ultrap
     overflow: auto;
 }
 ```
+
+# `overflow: hidden`
+
+- Esconde todo conteúdo que ultrapassar o tamanho da `div`.
+- O conteúdo excedente fica invisível.
+- Também pode ser utilizado para conter elementos com `float`.
+
+## Exemplo
+
+```css
+.container {
+    overflow: hidden;
+}
