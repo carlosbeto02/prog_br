@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style></style>
+
+  <body>
+    <h1 id="titulo"></h1>
+    <input type="text" id="inTexto" />
+  </body>
+
+  <script>
+    //localStorage.setItem("nome", "Beto"); */
+
+    //localStorage.getItem();
+    /* let x = localStorage.getItem("nome");
+    console.log(x); */
+
+    //localStorage.removeItem("nome");
+
+    const h1Titulo = document.querySelector("#titulo");
+    const inTexto = document.querySelector("#inTexto");
+
+    onload = () => {
+      const textoFixo = localStorage.getItem("texto");
+      h1Titulo.innerHTML = textoFixo;
+    };
+
+    const salvar = () => {
+      console.log(inTexto.value);
+
+      h1Titulo.innerHTML = inTexto.value;
+
+      localStorage.setItem("texto", inTexto.value);
+    };
+
+    inTexto.addEventListener("input", salvar);
+  </script>
+
+  <script>
+    /*  let a = { nome: "Beto", n1: 5 };
+    localStorage.setItem("aluno", JSON.stringify(a)); */
+
+    let resgatar = localStorage.getItem("aluno");
+    console.log(JSON.parse(resgatar));
+
+    localStorage.clear();
+  </script>
+</html>
